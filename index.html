@@ -102,7 +102,7 @@ function render(){
 ['#q','#fa','#fc','#fw','#fp'].forEach(s=>$(s).addEventListener('input',render));
 $('#rst').onclick=()=>{$('#q').value='';$('#fa').value='';$('#fc').value='';$('#fw').value='0';document.querySelectorAll('#fp input').forEach(i=>i.checked=false);render()};
 // ▼ 応募の送信先。Formspree等のURLを入れるとメール自動送信、空ならメールアプリを起動
-const ENDPOINT='https://formspree.io/f/mnpjylbe';
+const ENDPOINT='https://formspree.io/f/xwlvdwbn';
 const open_=h=>{$('#sh').innerHTML='<button class="x" aria-label="閉じる">×</button>'+h;$('#ov').classList.add('open');$('#sh').scrollTop=0;$('#sh .x').onclick=close_};
 const close_=()=>$('#ov').classList.remove('open');
 $('#ov').addEventListener('click',e=>{if(e.target.id==='ov')close_()});
